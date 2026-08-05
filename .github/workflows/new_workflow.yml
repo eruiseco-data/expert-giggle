@@ -1,0 +1,10 @@
+name: install-netlify-package
+on: [push]
+jobs:
+  checko-netlify-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+      - run: npm install netlify-cli -g
+      - run: npm netlify -v
