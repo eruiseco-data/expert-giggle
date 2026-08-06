@@ -1,6 +1,6 @@
 def hello_worldU():
     print("Hello World!")
-    print("Test")
+    print("test")
 
 def main():
     hello_worldU()
